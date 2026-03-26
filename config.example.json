@@ -1,1 +1,33 @@
 
+{
+    "super_admin_ids": [123456789012345678],
+    "mod_role_ids": [987654321098765432],
+    "api_endpoints": {
+        "safebooru": "https://safebooru.org/index.php?page=dapi&s=post&q=index&json=1&tags={tags}&limit={limit}",
+        "danbooru": "https://danbooru.donmai.us/posts.json?tags={tags}&limit={limit}",
+        "gelbooru": "https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&tags={tags}&limit={limit}&pid={page}",
+        "nekos_life": "https://nekos.life/api/v2/img/neko",
+        "nekos_life_lewd": "https://nekos.life/api/v2/img/lewd"
+    },
+    "tag_mappings": {
+        "loli": "loli",
+        "shotacon": "shotacon",
+        "yaoi": "yaoi",
+        "yuri": "yuri",
+        "hentai": "rating:explicit"
+    },
+    "fallback_image_urls": {
+        "loli": ["https://cdn.donmai.us/sample/12/34/__loli_sample-123456.jpg"],
+        "shotacon": ["https://cdn.donmai.us/sample/56/78/__shotacon_sample-567890.jpg"],
+        "yaoi": ["https://cdn.donmai.us/sample/90/12/__yaoi_sample-901234.jpg"],
+        "yuri": ["https://cdn.donmai.us/sample/34/56/__yuri_sample-345678.jpg"],
+        "hentai": ["https://cdn.donmai.us/sample/78/90/__hentai_sample-789012.jpg"]
+    },
+    "request_delay": 2.0,
+    "mass_action_batch_size": 5,
+    "max_search_results": 10,
+    "default_color": 0xFF69B4,
+    "error_color": 0xFF0000,
+    "success_color": 0x00FF00,
+    "log_color": 0x7289DA
+}
